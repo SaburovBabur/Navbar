@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS CreateElement Demo</title>
+  </head>
+  <body>
+    <!--  -->
+
+    <script>
+      const article = document.createElement('article');
+      const body = document.createElement('p');
+      const body2 = document.createElement('p');
+
+      article.textContent = 'Article <article>';
+      body.textContent = 'body <p>';
+
+      article.append(body2);
+      article.appendChild(body);
+
+      document.body.appendChild(article);
+      // document.body.appendChild(body);
+
+      let app = document.querySelector('body');
+
+      let langs = ['TypeScript', 'HTML', 'CSS'];
+
+      let nodes = langs.map((lang) => {
+        let li = document.createElement('li');
+        li.textContent = lang;
+        return li;
+      });
+
+      console.log(nodes);
+
+      app.append(...nodes);
+    </script>
+  </body>
+</html>

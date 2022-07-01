@@ -1,0 +1,14 @@
+{
+  "name": "WorkFlow",
+  "version": "0.0.0",
+  "description": "Worklflow mobile menu",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "IT",
+    "Education"
+  ],
+  "dependencies": {},
+  "author": "Saburov Babur",
+  "license": "ISC"
+}
